@@ -32,3 +32,10 @@ target_link_libraries( gstaudio ${GSTREAMER_LIBRARIES} )
 
 add_executable( gstwebcam src/gst-webcam.c )
 target_link_libraries( gstwebcam ${GSTREAMER_LIBRARIES} )
+
+add_executable( gstasend src/gst-asend.c )
+target_link_libraries( gstasend ${GSTREAMER_LIBRARIES} )
+
+add_executable( gstarecv src/gst-arecv.c )
+target_link_libraries( gstarecv ${GSTREAMER_LIBRARIES} )
+
